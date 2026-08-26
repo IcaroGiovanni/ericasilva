@@ -1564,6 +1564,53 @@ ul {
     text-transform: uppercase;
 }
 
+/* -------------------
+   Payment Methods Section
+   ------------------- */
+.payment-card {
+    background: linear-gradient(135deg, #F2D0DA 0%, #FADCE5 50%, #F2D0DA 100%);
+    border-radius: 20px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgba(212, 142, 160, 0.3);
+    box-shadow: 0 10px 30px rgba(212, 142, 160, 0.2);
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-icon {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #D48EA0;
+    box-shadow: 0 5px 15px rgba(212, 142, 160, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.payment-method:hover .payment-icon {
+    transform: scale(1.1);
+}
+
+.payment-method span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #5a3a42;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 /* Mobile Responsive */
 @media (max-width: 480px) {
     .btn-whatsapp-pulse {
